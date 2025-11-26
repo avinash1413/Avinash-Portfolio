@@ -1,0 +1,48 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Designing Maintainable Front-Ends</title>
+<link rel="stylesheet" href="styles.css"></head><body class="blog-page">
+<div class="wrap"><h1>Designing Maintainable Front-Ends: Patterns That Scale</h1>
+<p><em>Published: Nov 2025</em></p>
+<p>Good front-end architecture is built on deliberate constraints: reusable components, unidirectional data flow, and separation of logic and presentation.</p>
+<ul>
+  <li><strong>Use state containers</strong> like Redux or Zustand for predictable, testable state.</li>
+  <li><strong>Component boundaries</strong> must reflect business logic boundaries — not just visual ones.</li>
+  <li><strong>Side-effects</strong> should be isolated in middleware or hooks.</li>
+</ul>
+<p>Use dependency injection where needed, abstract I/O from UI logic, and document interfaces between components. This creates a foundation for long-lived systems.</p>
+</div></body></html>
+
+<!doctype html><html><head><meta charset="utf-8"><title>APIs That Scale</title>
+<link rel="stylesheet" href="styles.css"></head><body class="blog-page">
+<div class="wrap"><h1>APIs That Survive: Pagination, Filters & Indexes</h1>
+<p><em>Published: Oct 2025</em></p>
+<p>Backend APIs must anticipate scale from day one. Design endpoints with:</p>
+<ul>
+  <li><strong>Pagination</strong> using offset or cursor pattern.</li>
+  <li><strong>Filtering</strong> with optional parameters (min_price, category_id, tags).</li>
+  <li><strong>Composite indexes</strong> matching your most common queries.</li>
+</ul>
+<p>Use Postman collections for testing, rate limits for protection, and profile queries with EXPLAIN. Think in edge-cases and defensive patterns.</p>
+</div></body></html>
+
+
+<!doctype html><html><head><meta charset="utf-8"><title>Resume Advice for Freshers</title>
+<link rel="stylesheet" href="styles.css"></head><body class="blog-page">
+<div class="wrap"><h1>Resume Advice for Freshers — Make the Top Third Count</h1>
+<p><em>Published: Sep 2025</em></p>
+<p>Recruiters scan resumes in <strong>6-10 seconds</strong>. Your top third should show:</p>
+<ul>
+  <li>Your <strong>key tech stack</strong></li>
+  <li>1-2 standout projects (with GitHub)</li>
+  <li>Optional: Certifications or blog links</li>
+</ul>
+<p>Use metrics (“Built X in Y time for Z users”) and link to real work. Avoid vague adjectives. Show you can solve problems.</p>
+</div></body></html>
+
+
+from pathlib import Path
+
+Path("/mnt/data/blog-post-frontends.html").write_text(blog1)
+Path("/mnt/data/blog-post-api-scale.html").write_text(blog2)
+Path("/mnt/data/blog-post-resume-top.html").write_text(blog3)
+
+"/mnt/data/blog-post-frontends.html"
